@@ -33,34 +33,27 @@ jobs:
 
       - name: Build Android APK
         run: |
-          gradle assembleDebug --stacktrace > ../build_error.log 2>&1 || true
-
-      - name: Commit Log
-        run: |
-          cd ..
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add build_error.log
-          git commit -m "Capture build error log [skip ci]" || true
-          git push origin main || true
-          test -f android/app/build/outputs/apk/debug/app-debug.apk || exit 1
+          gradle assembleDebug --stacktrace 2>&1 | tee ../build.log
 
       - name: Prepare APK Output
+        if: always()
         run: |
           mkdir -p ../dist
-          find . -type f -name "*.apk" -exec cp {} ../dist/PetCare-v1.0.0.apk \;
-          ls -lh ../dist/
+          find . -name "*.apk" -exec cp {} ../dist/PetCare-v1.0.0.apk \;
+          cp ../build.log ../dist/build.log || true
+          ls -la ../dist/
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: PetCare-APK
-          path: dist/PetCare-v1.0.0.apk
+          path: dist/*
           retention-days: 30
 
       - name: Create GitHub Release with APK
         uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/heads/main')
+        if: always()
         with:
           tag_name: v1.0.0
           name: "PetCare Android App v1.0.0 (APK)"
@@ -71,8 +64,7 @@ jobs:
             
             - **الإصدار:** v1.0.0
             - **اسم الحزمة:** `com.petcare.app`
-            - **الحجم:** خفيف وسريع، يعمل بدون إنترنت مع دعم كامل للميزات والتحديثات المباشرة.
             - **طريقة التثبيت:** حمّل ملف `PetCare-v1.0.0.apk` المرفق أدناه وافتحه في هاتفك، ثم اضغط "تثبيت (Install)".
-          files: dist/PetCare-v1.0.0.apk
+          files: dist/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
