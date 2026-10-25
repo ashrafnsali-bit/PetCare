@@ -1,6 +1,17 @@
-# 🐾 دليل موقع ومنظومة تطبيق PetCare الرسمي
-
-تم بناء وتصميم موقع وتطبيق **PetCare** بالكامل وفق متطلبات الهوية البصرية، وألوان الشعار المعتمد (الدرجة الفيروزية الأساسية `#03a691` مع الخلفيات النعناعية الناعمة والخطوط الحديثة `Cairo` و `Plus Jakarta Sans`)، مع تلبية متطلبات متاجر التطبيقات (Apple App Store و Google Play) والربط الذكي للتسويق.
+<div align="center">
+  <img src="assets/logo.jpg" alt="PetCare Logo" width="220" style="border-radius: 24px; box-shadow: 0 8px 24px rgba(3, 166, 145, 0.2);" />
+  <h1>🐾 تطبيق ومنصة PetCare</h1>
+  <p><strong>كل ما يحتاجه أليفك في مكان واحد | رعاية بيطرية وعناية متكاملة</strong></p>
+  <p>
+    <a href="https://ashrafnsali-bit.github.io/PetCare/"><b>🌐 زيارة الموقع المباشر (Live Website)</b></a> •
+    <a href="https://ashrafnsali-bit.github.io/PetCare/download.html"><b>📲 الرابط الذكي للتحميل (Smart Link)</b></a>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/Status-Active-03a691?style=for-the-badge" alt="Status Active" />
+    <img src="https://img.shields.io/badge/Platform-iOS%20%7C%20Android%20%7C%20Web-03a691?style=for-the-badge" alt="Platforms" />
+    <img src="https://img.shields.io/badge/Language-Arabic%20%26%20English-018574?style=for-the-badge" alt="Bilingual" />
+  </p>
+</div>
 
 ---
 
