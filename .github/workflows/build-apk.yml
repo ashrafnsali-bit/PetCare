@@ -32,7 +32,18 @@ jobs:
           gradle-version: '8.5'
 
       - name: Build Android APK
-        run: gradle assembleDebug
+        run: |
+          gradle assembleDebug --stacktrace > ../build_error.log 2>&1 || true
+
+      - name: Commit Log
+        run: |
+          cd ..
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add build_error.log
+          git commit -m "Capture build error log [skip ci]" || true
+          git push origin main || true
+          test -f android/app/build/outputs/apk/debug/app-debug.apk || exit 1
 
       - name: Prepare APK Output
         run: |
