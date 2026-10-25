@@ -17,3 +17,11 @@ node_modules/
 # Temporary / Log files
 *.log
 scratch/
+
+# Android Build & Binaries
+*.apk
+dist/
+android/.gradle/
+android/app/build/
+android/build/
+
