@@ -419,6 +419,34 @@ button, input, select, textarea {
   margin-bottom: 40px;
 }
 
+.btn-store-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15, 28, 32, 0.18);
+  height: 48px;
+  background: #232425;
+}
+
+.btn-store-badge img {
+  height: 48px;
+  width: auto;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.btn-store-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(3, 166, 145, 0.35);
+}
+
+.btn-store-badge:hover img {
+  transform: scale(1.02);
+}
+
 .btn-store {
   display: inline-flex;
   align-items: center;
@@ -474,11 +502,12 @@ body.ltr .btn-store {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 20px;
+  padding: 0 20px;
+  height: 48px;
   background: var(--bg-card);
   color: var(--primary-dark);
   border: 1.5px solid var(--border-light);
-  border-radius: var(--radius-md);
+  border-radius: 7px;
   font-weight: 700;
   font-size: 0.95rem;
   box-shadow: var(--shadow-xs);
