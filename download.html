@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetCare | الرابط الموحد الذكي (Smart Link)</title>
+  <meta name="description" content="جاري توجيهك إلى متجر التطبيقات المناسب لجهازك لتحميل تطبيق PetCare مجاناً.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .redirect-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      background: radial-gradient(circle at 50% 30%, #e4fefb 0%, #f7fdfc 70%);
+    }
+    .redirect-card {
+      background: white;
+      padding: 44px 36px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-lg);
+      max-width: 480px;
+      width: 100%;
+    }
+    .loading-spinner {
+      width: 52px;
+      height: 52px;
+      border: 4px solid var(--primary-light);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="redirect-wrap">
+    <div class="redirect-card">
+      <img src="assets/logo-transparent.png" alt="PetCare Logo" style="height: 58px; margin: 0 auto 16px;" onerror="this.src='assets/logo.jpg'">
+      <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">جاري توجيهك للمتجر...</h2>
+      <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;">
+        نظام التحويل الذكي يتعرف على جهازك لنقلك لصفحة تحميل PetCare المناسبة.
+      </p>
+
+      <div class="loading-spinner"></div>
+      <p id="redirect-status" style="font-size: 0.88rem; font-weight: 700; color: var(--primary); margin-bottom: 24px;">جاري الفحص...</p>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <a id="manual-ios" href="https://apps.apple.com/app/petcare-app/id1680000000" class="btn-store" style="justify-content: center;">
+          <div class="btn-store-text" style="text-align: center;">
+            <span class="label-sub">مستخدمي Apple</span>
+            <span class="label-main">تحميل من App Store</span>
+          </div>
+        </a>
+        <a id="manual-android" href="https://play.google.com/store/apps/details?id=com.petcare.app" class="btn-store" style="justify-content: center;">
+          <div class="btn-store-text" style="text-align: center;">
+            <span class="label-sub">مستخدمي Android</span>
+            <span class="label-main">تحميل من Google Play</span>
+          </div>
+        </a>
+        <a href="index.html" style="font-size: 0.88rem; color: var(--text-muted); margin-top: 10px;">أو انتقل إلى موقع PetCare الرسمي</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const STORE_URLS = {
+      ios: 'https://apps.apple.com/app/petcare-app/id1680000000',
+      android: 'https://play.google.com/store/apps/details?id=com.petcare.app'
+    };
+
+    function detectAndRedirect() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+      const statusEl = document.getElementById('redirect-status');
+
+      if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        statusEl.textContent = 'تم اكتشاف جهاز iOS - جاري فتح متجر App Store...';
+        setTimeout(() => {
+          window.location.href = STORE_URLS.ios;
+        }, 600);
+      } else if (/android/i.test(ua)) {
+        statusEl.textContent = 'تم اكتشاف جهاز Android - جاري فتح متجر Google Play...';
+        setTimeout(() => {
+          window.location.href = STORE_URLS.android;
+        }, 600);
+      } else {
+        statusEl.textContent = 'أنت تتصفح من جهاز كمبيوتر مكتبي - يرجى اختيار متجرك:';
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', detectAndRedirect);
+  </script>
+</body>
+</html>

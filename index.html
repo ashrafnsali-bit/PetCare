@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetCare | كل ما يحتاجه أليفك في مكان واحد</title>
+  
+  <!-- Meta & App Store Compliance Tags -->
+  <meta name="description" content="تطبيق PetCare هو منصتك المتكاملة لرعاية الحيوانات الأليفة: حجز العيادات البيطرية، خدمات العناية والنظافة Grooming، متجر الأغذية والمستلزمات، وباقات الرعاية الصحية السنوية والشهرية مع أعلى نسبة توفير.">
+  <meta name="keywords" content="PetCare, عيادات بيطرية, حلاقة قطط وكلاب, Grooming, مستلزمات حيوانات, باقات رعاية صحية للحيوانات, بيطري منزلي, تبني حيوانات">
+  <meta name="theme-color" content="#03a691">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PetCare | رعاية بيطرية وعناية متكاملة لأليفك">
+  <meta property="og:description" content="احجز مواعيد العيادات، اطلب خدمات Grooming، تسوق مستلزمات أليفك، ووفّر مع باقات الرعاية الصحية الذكية.">
+  <meta property="og:image" content="assets/logo.jpg">
+  
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION
+       =================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container navbar">
+      <a href="#hero" class="brand-logo" aria-label="PetCare الرئيسية">
+        <img src="assets/logo-transparent.png" alt="PetCare Logo" onerror="this.src='assets/logo.jpg'">
+        <span class="brand-name">Pet<span>Care</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active" data-en="Home">الرئيسية</a></li>
+          <li><a href="#services" data-en="Our Services">خدماتنا</a></li>
+          <li><a href="#wellness" data-en="Wellness Plans">باقات الرعاية</a></li>
+          <li><a href="#how-it-works" data-en="How It Works">كيف يعمل؟</a></li>
+          <li><a href="#partners" data-en="Partners">شركاؤنا</a></li>
+          <li><a href="#reviews" data-en="Reviews">آراء المربين</a></li>
+          <li><a href="#faq" data-en="FAQ">الأسئلة الشائعة</a></li>
+          <li><a href="support.html" data-en="Support">الدعم الفني</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="btn-lang-toggle" class="lang-btn" aria-label="تبديل اللغة">
+          <span class="lang-icon">🌐</span> <span class="lang-text">English</span>
+        </button>
+        <button class="btn-header-cta js-smart-download" id="header-cta-download" aria-label="تحميل التطبيق">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+          </svg>
+          <span class="btn-cta-text" data-en="Download App">تحميل التطبيق</span>
+        </button>
+        <button class="hamburger-btn" aria-label="فتح القائمة">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       HERO SECTION
+       =================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="pulse-dot"></span>
+          <span data-en="The All-in-One Pet Care Super App">المنصة الشاملة الأولى للرعاية البيطرية وخدمات الأليف 🐾</span>
+        </div>
+
+        <h1 class="hero-title" data-en="Everything Your Pet Needs, <span class='text-highlight'>All in One Place</span>">
+          كل ما يحتاجه أليفك في <span class="text-highlight">مكان واحد</span>
+        </h1>
+
+        <p class="hero-description" data-en="PetCare connects you with top licensed veterinary clinics, mobile grooming salons, premium supplies store, and cost-saving wellness subscriptions. Exceptional care for your furry family members, just one tap away.">
+          منصتك الموثوقة لحجز أفضل العيادات البيطرية المعتمدة، طلب خدمات الحلاقة والنظافة (Grooming) المنزلية، متجر المستلزمات والأغذية، وباقات الرعاية الصحية الذكية التي تمنح أليفك حماية شاملة وتوفر عليك حتى 45% من التكاليف.
+        </p>
+
+        <!-- Official App Store & Google Play CTA Buttons -->
+        <div class="hero-cta-group">
+          <!-- App Store -->
+          <a href="https://apps.apple.com/app/petcare-app/id1680000000" target="_blank" rel="noopener noreferrer" class="btn-store" id="btn-hero-appstore">
+            <svg viewBox="0 0 170 170">
+              <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.34-6.53-9.8-11.64-20.73-15.34-32.8-3.7-12.06-5.55-23.47-5.55-34.23 0-14.34 3.7-26.39 11.11-36.14 7.4-9.75 16.73-14.75 27.97-15 4.8 0 10.36 1.37 16.7 4.11 6.34 2.74 10.32 4.16 11.96 4.27 1.85-.11 6.13-1.64 12.85-4.58 6.72-2.94 12.33-4.22 16.82-3.86 12.63 1.09 22.84 5.99 30.64 14.7-11.09 6.74-16.53 16.2-16.32 28.38.22 9.57 3.8 17.62 10.74 24.14 6.94 6.53 15.33 10.33 25.17 11.42-2.28 7.07-5.18 14.57-8.71 22.5m-30.86-104.9c0-6.74 2.45-13.21 7.35-19.42 4.9-6.2 10.99-10.22 18.27-12.06.33 2.18.5 4.08.5 5.71 0 6.63-2.61 13.1-7.83 19.42-5.22 6.31-11.31 10.06-18.29 11.25z"/>
+            </svg>
+            <div class="btn-store-text">
+              <span class="label-sub" data-en="Download on the">تحميل من</span>
+              <span class="label-main">App Store</span>
+            </div>
+          </a>
+
+          <!-- Google Play -->
+          <a href="https://play.google.com/store/apps/details?id=com.petcare.app" target="_blank" rel="noopener noreferrer" class="btn-store" id="btn-hero-googleplay">
+            <svg viewBox="0 0 512 512">
+              <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+            </svg>
+            <div class="btn-store-text">
+              <span class="label-sub" data-en="Get it on">تحميل من</span>
+              <span class="label-main">Google Play</span>
+            </div>
+          </a>
+
+          <!-- QR Scan Trigger for Desktop -->
+          <button class="btn-qr-scan js-smart-download" id="btn-hero-qr" data-en="Scan QR Code">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            مسح رمز الاستجابة السريعة QR
+          </button>
+        </div>
+
+        <!-- Trust Stats -->
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <span class="stat-num">4.9 <span>★</span></span>
+            <span class="stat-label" data-en="Store Ratings (4,500+ reviews)">تقييم المتجر (+4,500 مراجعة)</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="stat-num">+15,000</span>
+            <span class="stat-label" data-en="Happy Registered Pets">حيوان أليف يتلقى الرعاية</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="stat-num">+120</span>
+            <span class="stat-label" data-en="Accredited Clinics & Salons">عيادة وصالون معتمد</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Interactive Smartphone Mockup -->
+      <div class="hero-visual">
+        <div class="phone-mockup-wrap">
+          <div class="phone-device">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <!-- App Bar inside phone -->
+              <div class="mock-header">
+                <div class="mock-user">
+                  <div class="mock-avatar">س</div>
+                  <div class="mock-user-meta">
+                    <span class="mock-user-name">أهلاً، سلمان 👋</span>
+                    <span class="mock-pet-badge">أليفك: روكي (Golden Retriever)</span>
+                  </div>
+                </div>
+                <div class="mock-bell">🔔</div>
+              </div>
+
+              <!-- Pet Status Banner inside phone -->
+              <div class="mock-pet-card">
+                <div class="mock-pet-info">
+                  <h4>روكي (Rocky)</h4>
+                  <p>تطعيم السعار السنوي بعد 3 أيام 📅</p>
+                  <span class="mock-pet-status">الحالة الصحية: ممتازة ✓</span>
+                </div>
+                <img src="assets/logo-icon.png" alt="Pet Avatar" class="mock-pet-img" style="background:#e4fefb; padding:4px;">
+              </div>
+
+              <!-- Quick Pillars inside phone -->
+              <div class="mock-section-title">الخدمات السريعة (اضغط للتجربة)</div>
+              <div class="mock-services-grid">
+                <div class="mock-service-btn" title="حجز عيادة">
+                  <div class="mock-service-icon">🩺</div>
+                  <span>عيادات</span>
+                </div>
+                <div class="mock-service-btn" title="حلاقة ونظافة">
+                  <div class="mock-service-icon">✂️</div>
+                  <span>Grooming</span>
+                </div>
+                <div class="mock-service-btn" title="متجر الأغذية">
+                  <div class="mock-service-icon">🦴</div>
+                  <span>المتجر</span>
+                </div>
+                <div class="mock-service-btn" title="باقات العناية">
+                  <div class="mock-service-icon">🛡️</div>
+                  <span>Wellness</span>
+                </div>
+              </div>
+
+              <!-- Wellness Plan Promo inside phone -->
+              <div class="mock-wellness-banner">
+                <div class="mock-wellness-text">
+                  <strong>باقات الرعاية الصحية 🌟</strong>
+                  <span>وفّر حتى 45% من تكاليف البيطرة</span>
+                </div>
+                <button class="mock-wellness-btn js-smart-download">اشترك</button>
+              </div>
+
+              <!-- Next Appointment Card inside phone -->
+              <div class="mock-appointment-card">
+                <div class="mock-date-box">
+                  <span>28</span><br><small>أكتوبر</small>
+                </div>
+                <div class="mock-apt-info">
+                  <h5>عيادة النخبة البيطرية</h5>
+                  <p>كشف دوري شامل + تطعيم السداسي • 05:30 م</p>
+                </div>
+              </div>
+
+              <!-- Bottom Nav Bar inside phone -->
+              <div class="mock-nav-bottom">
+                <div class="mock-nav-item active"><span>🏠</span>الرئيسية</div>
+                <div class="mock-nav-item"><span>📅</span>مواعيدي</div>
+                <div class="mock-nav-item"><span>🛍️</span>المتجر</div>
+                <div class="mock-nav-item"><span>🐾</span>ملف أليفي</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top-left">
+            <div class="icon-bubble">✓</div>
+            <div class="badge-text">
+              <h6>تم تأكيد موعد العيادة</h6>
+              <span>د. سارة • اليوم 6:00 م</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-right">
+            <div class="icon-bubble">💰</div>
+            <div class="badge-text">
+              <h6>وفرت 480 ر.س</h6>
+              <span>مع باقة PetCare Wellness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       TRUST & METRICS BANNER
+       =================================================================== -->
+  <section class="trust-banner">
+    <div class="container trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">🏥</div>
+        <div class="trust-meta">
+          <h4>عيادات معتمدة</h4>
+          <p data-en="100% Licensed Clinics">أطباء مرخصون ومراكز معتمدة رسمياً</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-meta">
+          <h4>حجز فوري</h4>
+          <p data-en="Instant Booking">تأكيد الموعد بلمسة زر دون انتظار</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">📁</div>
+        <div class="trust-meta">
+          <h4>سجل صحي رقمي</h4>
+          <p data-en="Digital Medical Records">تاريخ الفحوصات والتطعيمات معك دائماً</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-meta">
+          <h4>حماية وتوفير مالي</h4>
+          <p data-en="Cost-Saving Plans">باقات رعاية توفر حتى 45% سنوياً</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       OUR SERVICES (أبرز خدمات التطبيق - المحاور الـ 5)
+       =================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-badge">
+          <span>🐾</span>
+          <span data-en="Comprehensive Pet Ecosystem">منظومة رعاية متكاملة لأليفك</span>
+        </div>
+        <h2 class="section-title" data-en="Our 5 Core App Pillars">أبرز خدمات تطبيق PetCare</h2>
+        <p class="section-subtitle" data-en="Designed meticulously to give your pet the best care while giving you total peace of mind and substantial savings.">
+          صُممت خدماتنا الخمس لتغطي كل مرحلة في حياة أليفك، من الرعاية الصحية العاجلة والروتينية وحتى النظافة الفاخرة والتغذية الصحية والمجتمع الداعم.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Pillar 1: Veterinary Services -->
+        <div class="service-card">
+          <div class="service-icon-box">🩺</div>
+          <h3 class="service-title" data-en="1. Veterinary Healthcare">1. الخدمات البيطرية الشاملة</h3>
+          <p class="service-desc" data-en="Browse accredited vet clinics, book in-clinic checkups or home veterinary visits, and access digital prescriptions and lab records instantly.">
+            حجز مواعيد العيادات البيطرية المعتمدة، طلب الزيارات البيطرية المنزلية، استشارات طبية فورية 24/7، وسجل طبي رقمي موثق لكل فحص وتطعيم.
+          </p>
+          <ul class="service-features">
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> كشف روتيني وطوارئ على مدار الساعة</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> سجل اللقاحات وتذكير تلقائي بالمواعيد</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> وصفات طبية إلكترونية وتقارير مخبرية</li>
+          </ul>
+          <a href="#how-it-works" class="service-link" data-en="Learn More">
+            اكتشف المزيد
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </a>
+        </div>
+
+        <!-- Pillar 2: Grooming & Spa -->
+        <div class="service-card">
+          <div class="service-icon-box">✂️</div>
+          <h3 class="service-title" data-en="2. Grooming & Spa Care">2. العناية والنظافة (Grooming)</h3>
+          <p class="service-desc" data-en="Pamper your pet with luxury grooming salons or mobile grooming vans at your doorstep: medicated baths, hair styling, claw trimming, and dental hygiene.">
+            دلال ونظافة متكاملة لأليفك: حجز صالونات العناية أو سيارات Grooming المجهزة المتنقلة حتى باب منزلك مع أخصائيين محترفين في التعامل اللطيف مع الحيوانات.
+          </p>
+          <ul class="service-features">
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> حلاقة احترافية واستحمام طبي ضد الطفيليات</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> تنظيف الأسنان والأذن وتقليم الأظافر</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> خيار الزيارة المتنقلة للمنزل أو زيارة الصالون</li>
+          </ul>
+          <a href="#how-it-works" class="service-link" data-en="Learn More">
+            اكتشف المزيد
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </a>
+        </div>
+
+        <!-- Pillar 3: Pet Store -->
+        <div class="service-card">
+          <div class="service-icon-box">🛍️</div>
+          <h3 class="service-title" data-en="3. Pet Store & Nutrition">3. متجر المستلزمات والأغذية</h3>
+          <p class="service-desc" data-en="Order premium wet & dry food, nutritional supplements, toys, litter, and carriers with fast doorstep delivery and recurring subscription options.">
+            تسوق آلاف المنتجات الأصلية والموثوقة من أفضل العلامات العالمية: أطعمة جافة ورطبة، مكملات وفيتامينات، رمال، ألعاب وإكسسوارات مع توصيل سريع وموثوق.
+          </p>
+          <ul class="service-features">
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> منتجات معتمدة ومطابقة للمواصفات الصحية</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> توصيل سريع في نفس اليوم مع تتبع مباشر</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> خصومات حصرية للمشتركين في باقات Wellness</li>
+          </ul>
+          <a href="#how-it-works" class="service-link" data-en="Learn More">
+            اكتشف المزيد
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </a>
+        </div>
+
+        <!-- Pillar 4: Pet Wellness Plans (Featured) -->
+        <div class="service-card featured-card">
+          <span class="service-card-tag" data-en="Most Popular">الأكثر توفيراً ⭐</span>
+          <div class="service-icon-box">🛡️</div>
+          <h3 class="service-title" data-en="4. Pet Wellness Plans">4. باقات الرعاية الصحية (Wellness)</h3>
+          <p class="service-desc" data-en="Preventative wellness packages designed for single or multiple pets. Covers vaccinations, checkups, and exclusive clinic discounts to slash vet bills.">
+            برامج اشتراك ذكية (باقات الفرد وباقات العائلة) تحمي أليفك برعاية استباقية وتغطي الفحوصات والتطعيمات وخصومات العيادات، لتريح بالك وتوفر ميزانيتك.
+          </p>
+          <ul class="service-features">
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> توفير مالي حقيقي يصل إلى 45% سنوياً</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> تطعيمات سنوية مجانية وكشوفات غير محدودة</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> أولوية حجز في طوارئ العيادات الشريكة</li>
+          </ul>
+          <a href="#wellness" class="service-link" data-en="Compare Plans">
+            قارن الباقات والأسعار
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </a>
+        </div>
+
+        <!-- Pillar 5: Community & Adoption -->
+        <div class="service-card">
+          <div class="service-icon-box">🤝</div>
+          <h3 class="service-title" data-en="5. Community & Adoption">5. المجتمع والتبني والحيوانات المفقودة</h3>
+          <p class="service-desc" data-en="Connect with fellow pet parents, report or search for lost pets with instant community alerts, and browse ethical adoption opportunities.">
+            شبكة تفاعلية لمربي الحيوانات لتبادل الخبرات والنصائح، نشر بلاغات الحيوانات المفقودة مع تنبيهات فورية للمربين في الحي، ودعم فرص التبني الإنسانية.
+          </p>
+          <ul class="service-features">
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> تنبيه فوري ذكي عند فقدان أليفك بالحي</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> منصة موثوقة لعرض وتبني الحيوانات مجاناً</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> مقالات ونصائح وإرشادات من خبراء بيطريين</li>
+          </ul>
+          <a href="#how-it-works" class="service-link" data-en="Learn More">
+            اكتشف المزيد
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </a>
+        </div>
+
+        <!-- Pillar 6 / Bonus App Value -->
+        <div class="service-card" style="background: linear-gradient(135deg, #03a691 0%, #015e52 100%); color: white;">
+          <div class="service-icon-box" style="background: rgba(255,255,255,0.2); color: white;">📱</div>
+          <h3 class="service-title" style="color: white;" data-en="Smart Digital Pet ID">الهوية الرقمية الموحدة لأليفك</h3>
+          <p class="service-desc" style="color: rgba(255,255,255,0.9);" data-en="A centralized medical passport and QR collar tag that keeps all records, allergies, microchip ID, and emergency contacts in one secure tap.">
+            ملف رقمي موحد وبطاقة QR ذكية لطوق أليفك، يجمع كل التطعيمات، نوع الفصيلة، رقم الشريحة الإلكترونية، وبيانات الطوارئ لتكون جاهزة عند أي عيادة أو سفر.
+          </p>
+          <ul class="service-features" style="border-top-color: rgba(255,255,255,0.2);">
+            <li style="color: white;"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> بطاقة طوق ذكية برمز QR تعاد مسحه عند الضياع</li>
+            <li style="color: white;"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> تتبع الوزن وجرعات العلاج دورياً</li>
+          </ul>
+          <button class="btn-plan-cta js-smart-download" style="background: white; color: var(--primary); border: none; margin-top: auto;" data-en="Download to Create ID">
+            أنشئ هوية أليفك مجاناً الآن
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       WELLNESS PLANS PREVIEW (باقات الرعاية الصحية)
+       =================================================================== -->
+  <section class="wellness-section" id="wellness">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-badge">
+          <span>🛡️</span>
+          <span data-en="Pet Wellness Plans">باقات الرعاية الصحية الذكية</span>
+        </div>
+        <h2 class="section-title" data-en="Care for Their Health, Protect Your Budget">رعاية وقائية شاملة، ووفر مالي يريحك</h2>
+        <p class="section-subtitle" data-en="Say goodbye to unexpected veterinary bills. Choose the wellness plan that fits your household and enjoy guaranteed preventative healthcare all year.">
+          وداعاً للفواتير البيطرية المفاجئة. تمنحك باقات PetCare فحصاً وقائياً دورياً، تطعيمات معتمدة مجانية، وخصومات على كافة الخدمات مع وفر مالي مدروس.
+        </p>
+
+        <!-- Toggle Switch (Monthly vs Yearly) -->
+        <div class="wellness-toggle-wrap">
+          <span class="wellness-toggle-label active" id="label-monthly" data-en="Monthly Billing">اشتراك شهري</span>
+          <div class="toggle-switch" id="pricing-toggle" role="button" aria-label="تبديل الخطة بين سنوي وشهري"></div>
+          <span class="wellness-toggle-label" id="label-yearly" data-en="Yearly (Save with 2 Months Free)">
+            اشتراك سنوي
+            <span class="discount-pill" data-en="2 Months Free">شهران مجاناً 🎁</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="plans-grid">
+        <!-- Single Pet Plan -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3 class="plan-name" data-en="Single-Pet Plan">باقة أليف واحد (Single-Pet)</h3>
+            <p class="plan-target" data-en="Ideal for owners of one cat or dog looking for complete preventative peace of mind.">مثالية لمربي الحيوان الواحد (قط أو كلب) لضمان حماية سنوية مستمرة.</p>
+            <div class="plan-price-wrap">
+              <span class="plan-price" id="price-single">79</span>
+              <span class="plan-currency">ر.س</span>
+              <span class="plan-period" id="period-single">/ شهرياً</span>
+            </div>
+            <div class="savings-highlight">
+              <span>💡</span>
+              <span data-en="Saves up to 35% on annual vet bills">توفر للمربي حتى 35% من تكاليف البيطرة والرعاية سنوياً</span>
+            </div>
+          </div>
+
+          <ul class="plan-perks">
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-en="4 Free comprehensive veterinary exams per year">4 كشوفات بيطرية شاملة مجانية سنوياً في العيادات الشريكة</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-en="All essential annual vaccines included (Rabies + Core)">كافة التطعيمات السنوية الأساسية مجاناً (السعار + الثلاثي/الرباعي)</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-en="Deworming & flea/tick prevention every quarter">جرعات وقاية الديدان والحشرات كل 3 أشهر</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-en="20% Discount on all Grooming & Spa sessions">خصم 20% على جميع جلسات Grooming والحلاقة</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-en="15% Discount on PetCare store products">خصم 15% على أغذية ومستلزمات متجر التطبيق</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-en="24/7 Digital vet chat & consultation">استشارات شات بيطري فوري 24/7 داخل التطبيق</span>
+            </li>
+          </ul>
+
+          <button class="btn-plan-cta js-smart-download" data-en="Subscribe via App">
+            اشترك الآن عبر التطبيق
+          </button>
+        </div>
+
+        <!-- Multi-Pet Family Plan -->
+        <div class="plan-card highlighted">
+          <div class="plan-top-badge" data-en="Best Value for Families">الأكثر شعبية وتوفيراً للعائلات ⭐</div>
+          <div class="plan-header">
+            <h3 class="plan-name" data-en="Multi-Pet Family Plan">باقة العائلة (Multi-Pet Plan)</h3>
+            <p class="plan-target" data-en="Designed for multi-pet households (covers up to 3 pets) with maximum shared perks.">مصممة للعائلات ومربي أكثر من حيوان أليف (تغطي حتى 3 حيوانات قطط أو كلاب).</p>
+            <div class="plan-price-wrap">
+              <span class="plan-price" id="price-family">149</span>
+              <span class="plan-currency">ر.س</span>
+              <span class="plan-period" id="period-family">/ شهرياً</span>
+            </div>
+            <div class="savings-highlight" style="background: #eefbf7; border-color: var(--primary);">
+              <span>🔥</span>
+              <span data-en="Saves up to 45% for multi-pet homes">توفر للعائلة حتى 45% من مجمل فواتير الرعاية والتطعيمات</span>
+            </div>
+          </div>
+
+          <ul class="plan-perks">
+            <li>
+              <span class="check-icon" style="background: var(--primary); color: white;">✓</span>
+              <span data-en="Covers up to 3 pets under one convenient membership">تغطية حتى 3 حيوانات أليفة في اشتراك عائلي موحد ومريح</span>
+            </li>
+            <li>
+              <span class="check-icon" style="background: var(--primary); color: white;">✓</span>
+              <span data-en="Unlimited free routine veterinary checkups">كشوفات بيطرية روتينية غير محدودة طوال العام</span>
+            </li>
+            <li>
+              <span class="check-icon" style="background: var(--primary); color: white;">✓</span>
+              <span data-en="Complete annual vaccination bundle for all registered pets">حزمة التطعيمات السنوية الشاملة مجاناً لجميع الحيوانات المسجلة</span>
+            </li>
+            <li>
+              <span class="check-icon" style="background: var(--primary); color: white;">✓</span>
+              <span data-en="30% Discount on Grooming & mobile pet vans">خصم 30% على خدمات Grooming وصالونات الزيارة المنزلية</span>
+            </li>
+            <li>
+              <span class="check-icon" style="background: var(--primary); color: white;">✓</span>
+              <span data-en="20% Discount + Free Delivery on all store orders">خصم 20% وتوصيل مجاني لطلبات المتجر والأطعمة</span>
+            </li>
+            <li>
+              <span class="check-icon" style="background: var(--primary); color: white;">✓</span>
+              <span data-en="VIP Emergency clinic priority pass">أولوية حجز خاصة في الحالات العاجلة وطوارئ العيادات</span>
+            </li>
+          </ul>
+
+          <button class="btn-plan-cta js-smart-download" data-en="Subscribe via App">
+            اشترك الآن عبر التطبيق
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       HOW IT WORKS (كيف يعمل التطبيق في 3 خطوات بسيطة)
+       =================================================================== -->
+  <section class="how-it-works-section" id="how-it-works">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-badge">
+          <span>🚀</span>
+          <span data-en="Simple 3 Steps">سهل وسريع</span>
+        </div>
+        <h2 class="section-title" data-en="How Does PetCare Work?">كيف يعمل تطبيق PetCare؟</h2>
+        <p class="section-subtitle" data-en="Get started in less than 2 minutes and give your pet the care they deserve seamlessly.">
+          ثلاث خطوات بسيطة تبدأ بها رحلة العناية الفائقة بأليفك بكل يسر وسهولة.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon-wrap">📲</div>
+          <h3 class="step-title" data-en="1. Download the App">1. حمّل التطبيق مجاناً</h3>
+          <p class="step-desc" data-en="Download PetCare from App Store or Google Play in seconds. Works smoothly on all iOS and Android devices.">
+            قم بتحميل تطبيق PetCare من متجر App Store أو Google Play مجاناً في ثوانٍ معدودة، وسجل دخولك برقم جوالك.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon-wrap">🐱</div>
+          <h3 class="step-title" data-en="2. Create Your Pet's Profile">2. أنشئ ملف أليفك الصحي</h3>
+          <p class="step-desc" data-en="Add your pet's photo, name, breed, age, and existing medical records to generate their unified Digital Health Passport.">
+            أضف صورة أليفك، فصيلته، عمره، وتاريخ تطعيماته السابقة ليقوم التطبيق بإنشاء ملف صحي ذكي وجدول تذكير تلقائي.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon-wrap">🎉</div>
+          <h3 class="step-title" data-en="3. Book or Subscribe">3. احجز خدماتك أو اشترك في الباقة</h3>
+          <p class="step-desc" data-en="Browse top clinics and grooming salons nearby, order supplies, or activate a Wellness Plan for unmatched savings.">
+            اختر العيادة البيطرية أو خدمة Grooming القريبة منك، تسوق مستلزماتك، أو اشترك في باقات Wellness بلمسة واحدة.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       APP SHOWCASE & FEATURES HIGHLIGHT
+       =================================================================== -->
+  <section class="showcase-section">
+    <div class="container showcase-grid">
+      <div class="showcase-image-box">
+        <img src="assets/hero_pets.jpg" alt="PetCare Pets Care Community">
+      </div>
+
+      <div class="showcase-content">
+        <div class="section-badge">
+          <span>⭐</span>
+          <span data-en="Why Pet Parents Trust Us">لماذا يختارنا آلاف المربين؟</span>
+        </div>
+        <h2 class="section-title" data-en="Smart Technology for a Healthier, Happier Pet">تقنية ذكية لحياة صحية وسعيدة لأليفك</h2>
+        <p class="section-subtitle" style="margin-bottom: 28px;" data-en="We believe preventative care and instant access to qualified specialists should be effortless for every pet parent.">
+          نحن نوفر راحة البال التامة لكل مربي حيوان أليف، من خلال إتاحة الوصول المباشر لأفضل الأطباء البيطريين وأحدث حلول التذكير والتوثيق الصحي.
+        </p>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">🩺</div>
+          <div class="feature-text">
+            <h4 data-en="Certified & Vetted Veterinary Network">أطباء وعيادات مرخصة ومعتمدة 100%</h4>
+            <p data-en="Every vet and salon on our network undergoes strict quality inspection to guarantee the highest medical standard.">جميع العيادات ومزودي الخدمات في شبكتنا يخضعون لتدقيق دقيق لضمان أعلى معايير الجودة والأمان لأليفك.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">🔔</div>
+          <div class="feature-text">
+            <h4 data-en="Smart Vaccination & Treatment Reminders">تذكيرات ذكية بمواعيد التطعيمات</h4>
+            <p data-en="Never miss a rabies booster, deworming pill, or hygiene appointment with automated push notifications.">لن تنسى موعد تطعيم أو جرعة وقاية بعد اليوم؛ يرسل لك التطبيق تنبيهات تلقائية قبل كل استحقاق.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">📍</div>
+          <div class="feature-text">
+            <h4 data-en="Live Tracking & Instant Booking">تتبع المواعيد والخدمات المنزلية</h4>
+            <p data-en="Track your mobile grooming van or order delivery in real time on a live map right to your door.">تتبع وصول سيارة Grooming المتنقلة أو شحنات متجرك بدقة ومباشرة عبر خريطة التطبيق التفاعلية.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       PARTNERS SECTION (شركاء النجاح)
+       =================================================================== -->
+  <section class="partners-section" id="partners">
+    <div class="container">
+      <div class="section-badge">
+        <span>🤝</span>
+        <span data-en="Accredited Partners Network">شبكة شركاء النجاح المعتمدة</span>
+      </div>
+      <h2 class="section-title" data-en="Trusted by Leading Clinics & Brands">أفضل العيادات البيطرية والمتاجر المعتمدة</h2>
+      <p class="section-subtitle" data-en="PetCare partners with reputable veterinary hospitals, top grooming salons, and leading pet nutrition brands across the region.">
+        نفخر بشراكتنا مع نخبة من المستشفيات والعيادات البيطرية المرخصة وصالونات العناية الفاخرة لتقديم أفضل تجربة لأليفك.
+      </p>
+
+      <div class="partners-logos-grid">
+        <div class="partner-logo-item">
+          <div class="partner-icon">🏥</div>
+          <span class="partner-name">مستشفى الرياض البيطري</span>
+          <span class="partner-type">عيادة معتمدة</span>
+        </div>
+        <div class="partner-logo-item">
+          <div class="partner-icon">🐾</div>
+          <span class="partner-name">عيادات بيت كير المتقدمة</span>
+          <span class="partner-type">رعاية تخصصية</span>
+        </div>
+        <div class="partner-logo-item">
+          <div class="partner-icon">✂️</div>
+          <span class="partner-name">Luxe Grooming Spa</span>
+          <span class="partner-type">صالونات فاخرة</span>
+        </div>
+        <div class="partner-logo-item">
+          <div class="partner-icon">🩺</div>
+          <span class="partner-name">مجمع النخبة البيطري</span>
+          <span class="partner-type">طوارئ 24 ساعة</span>
+        </div>
+        <div class="partner-logo-item">
+          <div class="partner-icon">🦴</div>
+          <span class="partner-name">Royal Canin & Hills</span>
+          <span class="partner-type">أغذية طبية معتمدة</span>
+        </div>
+        <div class="partner-logo-item">
+          <div class="partner-icon">🚐</div>
+          <span class="partner-name">Mobile Vet Express</span>
+          <span class="partner-type">زيارات منزلية</span>
+        </div>
+      </div>
+
+      <!-- Partner CTA -->
+      <div class="partner-cta-box">
+        <div class="partner-cta-info">
+          <h4 data-en="Are you a Vet Clinic or Pet Grooming Provider?">هل تمتلك عيادة بيطرية أو متجر مستلزمات أو صالون Grooming؟</h4>
+          <p data-en="Join our verified partner network, grow your clientele, and receive online bookings easily.">انضم لشبكة شركاء PetCare لزيادة وصولك لآلاف المربين وإدارة حجوزاتك ومبيعاتك باحترافية.</p>
+        </div>
+        <button class="btn-partner-join" data-open-modal="partner-modal" data-en="Apply as a Partner">
+          انضم كشريك في الشبكة
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       TESTIMONIALS (آراء المربين)
+       =================================================================== -->
+  <section class="testimonials-section" id="reviews">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-badge">
+          <span>💬</span>
+          <span data-en="Pet Parents Community">تجارب حقيقية</span>
+        </div>
+        <h2 class="section-title" data-en="Loved by Over 15,000 Pet Parents">ماذا يقول مربو الحيوانات عن PetCare؟</h2>
+        <p class="section-subtitle" data-en="Read genuine reviews from cat and dog owners who rely on PetCare every day for healthcare, grooming, and savings.">
+          تجارب ملهمة من مربين وجدوا في PetCare الحل الشامل لرعاية أليفاتهم وتوفير نفقاتهم البيطرية.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote" data-en="“The Multi-Pet Wellness plan is a lifesaver! I have 3 rescued cats, and the routine visits and free vaccines saved me over 1,200 SAR this year alone. Outstanding app.”">
+              "باقة العائلة (Multi-Pet Plan) وفرت علي أكثر من 1,200 ريال هذا العام! عندي 3 قطط والتطعيمات والكشوفات السنوية كانت تكلفني مبالغ كبيرة، الآن كل شيء منظم داخل التطبيق وحجز العيادة بضغطة زر."
+            </p>
+          </div>
+          <div class="test-author">
+            <div class="author-avatar">ن</div>
+            <div class="author-meta">
+              <h5>نوف العتيبي</h5>
+              <span>مربية 3 قطط • الرياض</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote" data-en="“The mobile grooming van service is incredible. They arrived at my villa on time, treated my Golden Retriever with exceptional kindness, and he smells amazing.”">
+              "خدمة سيارة Grooming المتنقلة عند باب البيت تجربة خرافية! وصلوا بالوقت وتعاملهم مع كلبي 'ماكس' كان بمنتهى اللطف والاحترافية. النظافة والحلاقة كانت ممتازة والتطبيق يريحك من مشاوير الزحمة."
+            </p>
+          </div>
+          <div class="test-author">
+            <div class="author-avatar">ع</div>
+            <div class="author-meta">
+              <h5>عبدالعزيز الشمري</h5>
+              <span>مربي كلب Golden • جدة</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote" data-en="“Having my pet's entire medical history and vaccination dates in a single app gives me immense peace of mind. The clinic team scanned his QR code and had his chart immediately.”">
+              "السجل الطبي الرقمي ميزة عبقرية! لما سافرت للشرقية دخلت عيادة هناك ومسحوا كود أليفي وظهرت كل فحوصاته السابقة وحساسيته للأدوية فوراً. تطبيق لا غنى عنه لأي شخص يحب أليفه."
+            </p>
+          </div>
+          <div class="test-author">
+            <div class="author-avatar">ف</div>
+            <div class="author-meta">
+              <h5>فاطمة المهندس</h5>
+              <span>مربية قطط شيرازي • الخبر</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FAQ SECTION (الأسئلة الشائعة)
+       =================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-container">
+      <div class="text-center">
+        <div class="section-badge">
+          <span>❓</span>
+          <span data-en="Got Questions?">إجابات واضحة</span>
+        </div>
+        <h2 class="section-title" data-en="Frequently Asked Questions">الأسئلة الشائعة</h2>
+        <p class="section-subtitle" data-en="Everything you need to know about PetCare services, subscriptions, and booking.">
+          كل ما تحتاج معرفته عن خدمات PetCare وباقات الرعاية الصحية وكيفية الاستفادة منها.
+        </p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-title" data-en="How do PetCare Wellness Plans save me money?">كيف توفر لي باقات الرعاية الصحية (Wellness Plans) مبالغ مالية؟</h3>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p class="faq-content" data-en="Our Wellness Plans package all mandatory annual veterinary preventative care (examinations, vaccinations, deworming) into an affordable subscription at a discounted rate, saving 35% to 45% compared to paying clinic visits individually. You also receive ongoing discounts on Grooming and store products.">
+              تجمع باقات الرعاية الصحية كافة الإجراءات الوقائية الضرورية التي يحتاجها أليفك سنوياً (كالكشوفات الدورية، التطعيمات الأساسية، جرعات الوقاية من الطفيليات) في اشتراك دوري مخفض، مما يوفر بين 35% إلى 45% مقارنة بسعر الدفع المنفرد لكل زيارة في العيادات، بالإضافة لخصومات إضافية على الحلاقة ومنتجات المتجر.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-title" data-en="Can I use the app across different clinics and cities?">هل يمكنني استخدام التطبيق في مختلف العيادات والمدن؟</h3>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p class="faq-content" data-en="Yes! Your PetCare membership and digital medical passport work seamlessly across our entire verified network of partner clinics and salons in Riyadh, Jeddah, Dammam, and other major cities.">
+              نعم بالتأكيد! اشتراكك وسجلك الطبي الرقمي معتمدان لدى كامل شبكة شركائنا من العيادات البيطرية وصالونات العناية في الرياض، جدة، المنطقة الشرقية، وباقي المدن الرئيسية بالمملكة.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-title" data-en="What happens if my pet needs urgent emergency care?">ماذا أفعل في الحالات الطارئة والحرجة لأليفي؟</h3>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p class="faq-content" data-en="The app includes a dedicated 24/7 Emergency button that instantly locates the nearest open emergency vet hospital, alerts them to your arrival, and provides on-the-spot first aid guidance via video consultation.">
+              يحتوي التطبيق على زر طوارئ مخصص على مدار 24/7، يحدد لك فوراً أقرب مستشفى بيطري مناوب مفتوح، مع إمكانية إشعار العيادة مسبقاً وتوفير إرشادات الإسعافات الأولية الفورية عبر الاستشارة السريعة.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-title" data-en="Is the PetCare app free to download?">هل تحميل التطبيق مجاني؟</h3>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p class="faq-content" data-en="Yes, downloading the app, creating your pet's profile, and accessing community features is 100% free. You only pay when booking a paid service, ordering from the store, or choosing to subscribe to a Wellness Plan.">
+              نعم، تحميل تطبيق PetCare وإنشاء الملف الطبي لأليفك مجاني تماماً بنسبة 100%. وتدفع فقط عند قيامك بحجز خدمة مدفوعة أو الشراء من المتجر أو الاشتراك الاختياري في باقات الرعاية الصحية.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-title" data-en="How can clinics or pet brands join PetCare?">كيف يمكن للعيادات والمتاجر الانضمام لشبكة PetCare؟</h3>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p class="faq-content" data-en="Clinics and stores can submit an onboarding request through our Partners form on this page or by emailing partners@petcare.app. Our medical relations team will verify licensing and finalize integration promptly.">
+              يمكن لأصحاب المراكز البيطرية والمتاجر تقديم طلب انضمام عبر الضغط على زر "انضم كشريك في الشبكة" أو مراسلتنا عبر partners@petcare.app، وسيقوم فريق علاقات الشركاء بالتحقق من التراخيص الرسمية وتفعيل حساب المركز على النظام.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CTA BANNER (تحميل التطبيق الآن)
+       =================================================================== -->
+  <section class="cta-banner-section" id="download">
+    <div class="container cta-banner-card">
+      <div class="cta-banner-content">
+        <h2 data-en="Download PetCare Today & Give Your Pet the Care They Deserve">حمّل تطبيق PetCare اليوم وامنح أليفك حياة أفضل</h2>
+        <p data-en="Join over 15,000 happy pet parents. Available now on iOS App Store and Google Play with smart instant booking and wellness packages.">
+          انضم لأكثر من 15,000 مربي يثقون في PetCare. التطبيق متوفر مجاناً على أجهزة آيفون وأندرويد مع ميزات الحجز الفوري، التذكيرات الذكية، والتوفير الأكبر.
+        </p>
+
+        <div class="cta-buttons-wrap">
+          <a href="https://apps.apple.com/app/petcare-app/id1680000000" target="_blank" rel="noopener noreferrer" class="btn-store">
+            <svg viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.34-6.53-9.8-11.64-20.73-15.34-32.8-3.7-12.06-5.55-23.47-5.55-34.23 0-14.34 3.7-26.39 11.11-36.14 7.4-9.75 16.73-14.75 27.97-15 4.8 0 10.36 1.37 16.7 4.11 6.34 2.74 10.32 4.16 11.96 4.27 1.85-.11 6.13-1.64 12.85-4.58 6.72-2.94 12.33-4.22 16.82-3.86 12.63 1.09 22.84 5.99 30.64 14.7-11.09 6.74-16.53 16.2-16.32 28.38.22 9.57 3.8 17.62 10.74 24.14 6.94 6.53 15.33 10.33 25.17 11.42-2.28 7.07-5.18 14.57-8.71 22.5m-30.86-104.9c0-6.74 2.45-13.21 7.35-19.42 4.9-6.2 10.99-10.22 18.27-12.06.33 2.18.5 4.08.5 5.71 0 6.63-2.61 13.1-7.83 19.42-5.22 6.31-11.31 10.06-18.29 11.25z"/></svg>
+            <div class="btn-store-text">
+              <span class="label-sub" data-en="Download on the">تحميل من</span>
+              <span class="label-main">App Store</span>
+            </div>
+          </a>
+
+          <a href="https://play.google.com/store/apps/details?id=com.petcare.app" target="_blank" rel="noopener noreferrer" class="btn-store">
+            <svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+            <div class="btn-store-text">
+              <span class="label-sub" data-en="Get it on">تحميل من</span>
+              <span class="label-main">Google Play</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- QR Code Widget -->
+      <div class="cta-qr-box">
+        <img src="assets/qr-code.png" alt="Scan QR Code to Download PetCare">
+        <span data-en="Scan with camera for instant download">امسح بكاميرا الجوال للتحميل المباشر</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER & COMPLIANCE SECTION (متطلبات المتاجر والجهات الرسمية)
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-info">
+          <div class="brand-logo">
+            <img src="assets/logo-transparent.png" alt="PetCare" style="filter: brightness(0) invert(1); height: 42px;">
+            <span class="brand-name" style="color: white;">Pet<span style="color: var(--primary);">Care</span></span>
+          </div>
+          <p data-en="PetCare is the leading pet wellness ecosystem, connecting pet parents with licensed veterinary care, luxury grooming, authentic pet nutrition, and community support.">
+            منصة PetCare الرائدة لرعاية الحيوانات الأليفة، تجمع المربين مع نخبة العيادات البيطرية المرخصة وصالونات Grooming ومتاجر الأغذية مع باقات رعاية صحية وقائية توفر أعلى جودة وأفضل قيمة.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/petcare_app" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://tiktok.com/@petcare_app" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="https://x.com/petcare_app" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div>
+          <h4 class="footer-col-title" data-en="Services">أقسام التطبيق</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" data-en="Veterinary Clinics">العيادات البيطرية</a></li>
+            <li><a href="#services" data-en="Pet Grooming & Spa">العناية والنظافة Grooming</a></li>
+            <li><a href="#services" data-en="Pet Store">متجر الأغذية والمستلزمات</a></li>
+            <li><a href="#wellness" data-en="Wellness Plans">باقات الرعاية الصحية</a></li>
+            <li><a href="#services" data-en="Adoption & Lost Pets">التبني والحيوانات المفقودة</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Legal & Regulatory -->
+        <div>
+          <h4 class="footer-col-title" data-en="Legal & Trust">الموثوقية والأنظمة</h4>
+          <ul class="footer-links-list">
+            <li><a href="privacy.html" data-en="Privacy Policy">سياسة الخصوصية (Privacy Policy)</a></li>
+            <li><a href="terms.html" data-en="Terms & Conditions">الشروط والأحكام (Terms)</a></li>
+            <li><a href="support.html" data-en="Support & Help">الدعم الفني وتواصل معنا</a></li>
+            <li><a href="#" data-open-modal="partner-modal" data-en="Partner Registration">تسجيل عيادة أو متجر</a></li>
+            <li><a href="download.html" data-en="Smart Link">رابط التحميل الذكي (Smart Link)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Support & Contact -->
+        <div>
+          <h4 class="footer-col-title" data-en="Support & Assistance">الدعم والمساعدة</h4>
+          <div class="footer-support-box">
+            <h5 data-en="Have Questions or Need Help?">هل تواجه مشكلة أو تحتاج استفساراً؟</h5>
+            <p data-en="Our dedicated customer care team is available 24/7 to support pet parents and clinic partners.">فريق الدعم الفني متواجد على مدار الساعة لخدمة المربين والعيادات.</p>
+            <button class="btn-footer-support" data-open-modal="support-modal" data-en="Contact Support">
+              تواصل مع الدعم الفني
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance Bar -->
+      <div class="footer-compliance-bar">
+        <p>© 2026 تطبيق PetCare. جميع الحقوق محفوظة • مسجل ومعتمد رسمياً وفق أنظمة وزارة التجارة والجهات الصحية.</p>
+        <div class="footer-legal-links">
+          <a href="privacy.html">سياسة الخصوصية</a>
+          <a href="terms.html">الشروط والأحكام</a>
+          <a href="support.html">اتصل بنا</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       MODAL 1: SMART QR CODE & STORE DOWNLOAD
+       =================================================================== -->
+  <div class="modal-overlay" id="qr-modal">
+    <div class="modal-box">
+      <button class="btn-modal-close" aria-label="إغلاق">&times;</button>
+      <div class="modal-header">
+        <h3 data-en="Download PetCare App">تحميل تطبيق PetCare</h3>
+        <p data-en="Scan with your phone camera or click your store below">امسح الرمز بكاميرا جوالك أو اختر متجر تطبيقات جهازك</p>
+      </div>
+
+      <div class="device-detection-banner">
+        <div class="dev-icon">📱</div>
+        <p id="detected-device-text">جاري فحص نظام جهازك...</p>
+      </div>
+
+      <div class="qr-display-center">
+        <img src="assets/qr-code.png" alt="PetCare QR Code">
+        <p data-en="Point your smartphone camera to download instantly">وجّه كاميرا هاتفك الذكي للتحميل الفوري المباشر</p>
+      </div>
+
+      <div class="cta-buttons-wrap" style="justify-content: center;">
+        <a href="https://apps.apple.com/app/petcare-app/id1680000000" target="_blank" rel="noopener noreferrer" class="btn-store" style="min-width: 170px;">
+          <svg viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.69-3.04-7.67-7.81-11.96-14.34-6.53-9.8-11.64-20.73-15.34-32.8-3.7-12.06-5.55-23.47-5.55-34.23 0-14.34 3.7-26.39 11.11-36.14 7.4-9.75 16.73-14.75 27.97-15 4.8 0 10.36 1.37 16.7 4.11 6.34 2.74 10.32 4.16 11.96 4.27 1.85-.11 6.13-1.64 12.85-4.58 6.72-2.94 12.33-4.22 16.82-3.86 12.63 1.09 22.84 5.99 30.64 14.7-11.09 6.74-16.53 16.2-16.32 28.38.22 9.57 3.8 17.62 10.74 24.14 6.94 6.53 15.33 10.33 25.17 11.42-2.28 7.07-5.18 14.57-8.71 22.5m-30.86-104.9c0-6.74 2.45-13.21 7.35-19.42 4.9-6.2 10.99-10.22 18.27-12.06.33 2.18.5 4.08.5 5.71 0 6.63-2.61 13.1-7.83 19.42-5.22 6.31-11.31 10.06-18.29 11.25z"/></svg>
+          <div class="btn-store-text">
+            <span class="label-sub">App Store</span>
+            <span class="label-main">Apple iOS</span>
+          </div>
+        </a>
+
+        <a href="https://play.google.com/store/apps/details?id=com.petcare.app" target="_blank" rel="noopener noreferrer" class="btn-store" style="min-width: 170px;">
+          <svg viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+          <div class="btn-store-text">
+            <span class="label-sub">Google Play</span>
+            <span class="label-main">Android</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL 2: SUPPORT & CONTACT FORM (متطلبات المتاجر الرسمية)
+       =================================================================== -->
+  <div class="modal-overlay" id="support-modal">
+    <div class="modal-box modal-large">
+      <button class="btn-modal-close" aria-label="إغلاق">&times;</button>
+      <div class="modal-header">
+        <h3 data-en="Contact Support & Help Desk">الدعم الفني وتواصل معنا</h3>
+        <p data-en="Send us your inquiry or issue and our team will get back to you shortly">نسعد بخدمتك والإجابة على استفساراتك على مدار الساعة</p>
+      </div>
+
+      <form id="contact-support-form">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label" data-en="Your Full Name">الاسم الكامل *</label>
+            <input type="text" class="form-input" required placeholder="مثال: محمد السالم">
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-en="Email Address">البريد الإلكتروني *</label>
+            <input type="email" class="form-input" required placeholder="name@domain.com">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label" data-en="Phone Number">رقم الجوال *</label>
+            <input type="tel" class="form-input" required placeholder="05XXXXXXXX">
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-en="Inquiry Topic">موضوع الاستفسار *</label>
+            <select class="form-select" required>
+              <option value="">اختر نوع الاستفسار...</option>
+              <option value="wellness">استفسار عن باقات الرعاية الصحية (Wellness Plans)</option>
+              <option value="booking">حجز أو تعديل موعد عيادة</option>
+              <option value="store">طلبات ومشتريات المتجر</option>
+              <option value="technical">مساعدة تقنية في حساب التطبيق</option>
+              <option value="partnership">استفسار شراكة وعيادات</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" data-en="Message Details">تفاصيل الرسالة أو المشكلة *</label>
+          <textarea class="form-textarea" required placeholder="اكتب تفاصيل طلبك أو استفسارك هنا..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-form-submit" data-en="Send Message">إرسال الرسالة</button>
+        <div class="form-feedback" id="contact-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL 3: PARTNER REGISTRATION MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="partner-modal">
+    <div class="modal-box modal-large">
+      <button class="btn-modal-close" aria-label="إغلاق">&times;</button>
+      <div class="modal-header">
+        <h3 data-en="Join PetCare Partner Network">انضم كشريك في شبكة PetCare</h3>
+        <p data-en="Register your veterinary clinic, grooming salon, or pet store">سجل عيادتك البيطرية أو متجرك أو صالونك لاستقبال الحجوزات الرسمية</p>
+      </div>
+
+      <form id="partner-join-form">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label">اسم المنشأة أو العيادة *</label>
+            <input type="text" class="form-input" required placeholder="مثال: عيادة الرعاية البيطرية">
+          </div>
+          <div class="form-group">
+            <label class="form-label">نوع النشاط *</label>
+            <select class="form-select" required>
+              <option value="">اختر نوع النشاط...</option>
+              <option value="vet">عيادة / مستشفى بيطري</option>
+              <option value="grooming">صالون حلاقة وعناية (Grooming)</option>
+              <option value="mobile_grooming">سيارة Grooming متنقلة</option>
+              <option value="store">متجر مستلزمات وأغذية حيوانات</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label">المدينة والمنطقة *</label>
+            <input type="text" class="form-input" required placeholder="الرياض، حي الملقا">
+          </div>
+          <div class="form-group">
+            <label class="form-label">رقم السجل التجاري أو الترخيص الطبي *</label>
+            <input type="text" class="form-input" required placeholder="رقم السجل أو الترخيص">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label">اسم الشخص المسؤول *</label>
+            <input type="text" class="form-input" required placeholder="د. أحمد / أ. سارة">
+          </div>
+          <div class="form-group">
+            <label class="form-label">رقم التواصل المباشر *</label>
+            <input type="tel" class="form-input" required placeholder="05XXXXXXXX">
+          </div>
+        </div>
+
+        <button type="submit" class="btn-form-submit" data-en="Submit Application">إرسال طلب الانضمام</button>
+        <div class="form-feedback" id="partner-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
