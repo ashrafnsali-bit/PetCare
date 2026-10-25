@@ -33,6 +33,7 @@ jobs:
 
       - name: Build Android APK
         run: |
+          set -o pipefail
           gradle assembleDebug --stacktrace 2>&1 | tee ../build.log
 
       - name: Prepare APK Output
