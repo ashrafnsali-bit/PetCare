@@ -1,0 +1,23 @@
+{
+  "name": "PetCare | كل ما يحتاجه أليفك",
+  "short_name": "PetCare",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#03a691",
+  "orientation": "portrait",
+  "description": "منصة شاملة لرعاية الحيوانات الأليفة وحجز العيادات البيطرية وخدمات Grooming وباقات الرعاية الصحية.",
+  "icons": [
+    {
+      "src": "assets/logo-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

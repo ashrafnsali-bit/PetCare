@@ -1,0 +1,71 @@
+name: Build & Release PetCare APK
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-apk:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: android
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Generate Gradle Wrapper
+        run: gradle wrapper --gradle-version 8.5
+
+      - name: Make Gradlew Executable
+        run: chmod +x gradlew
+
+      - name: Build Android Release APK
+        run: ./gradlew assembleRelease
+
+      - name: Prepare APK Output
+        run: |
+          mkdir -p ../dist
+          cp app/build/outputs/apk/release/app-release.apk ../dist/PetCare-v1.0.0.apk
+          ls -la ../dist/
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PetCare-APK
+          path: dist/PetCare-v1.0.0.apk
+          retention-days: 30
+
+      - name: Create GitHub Release with APK
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/heads/main')
+        with:
+          tag_name: v1.0.0
+          name: "PetCare Android App v1.0.0 (APK)"
+          body: |
+            ### 🐾 تطبيق PetCare الرسمي لأجهزة الأندرويد
+            
+            يمكنك الآن تحميل وتثبيت تطبيق PetCare مباشرة على أي هاتف يعمل بنظام أندرويد (Android).
+            
+            - **الإصدار:** v1.0.0
+            - **اسم الحزمة:** `com.petcare.app`
+            - **الحجم:** خفيف وسريع، يعمل بدون إنترنت مع دعم كامل للميزات والتحديثات المباشرة.
+            - **طريقة التثبيت:** حمّل ملف `PetCare-v1.0.0.apk` المرفق أدناه وافتحه في هاتفك، ثم اضغط "تثبيت (Install)".
+          files: dist/PetCare-v1.0.0.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
